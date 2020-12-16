@@ -23,8 +23,6 @@ func (r MyReader) Read(b []byte) (int, error) {
 	return len(b), nil //shouldn't i return here an error="io.EOF"?
 }
 
-// TODO: Add a Read([]byte) (int, error) method to MyReader.
-
 func main() {
 	reader.Validate(MyReader{})
 }
